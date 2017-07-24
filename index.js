@@ -11,3 +11,12 @@ console.log(
     chalk.rgb(186, 81, 182)(moment().format("DDDo")) +
     " day of the year."
 );
+
+let a = moment();
+let b = moment().startOf("day");
+
+console.log(
+  "It is " +
+    chalk.rgb(98, 182, 145)(a.diff(b, "seconds")) +
+    " seconds into the day."
+);
